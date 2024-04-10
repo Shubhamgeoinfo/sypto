@@ -1,0 +1,20 @@
+{
+  "name": "sypto-backend-api",
+  "version": "1.0.0",
+  "description": "api for holdings, sell, buy, postback and price websocket",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shubham kumar",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0",
+    "upstox-js-sdk": "^2.4.0"
+  }
+}
