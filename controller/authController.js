@@ -7,8 +7,8 @@ export const authorization = async (req, res) => {
     let apiVersion = "2.0";
     // console.log(apiInstance);
     let opts = {
-      code: "902fc7d9-9b05-4260-928f-bf0e06119af3",
-      clientId: "rnodw7teby",
+      code: "",
+      clientId: "902fc7d9-9b05-4260-928f-bf0e06119af3",
       clientSecret: "rnodw7teby",
       redirectUri: "http://localhost:8000/",
       grantType: "authorization_code",
