@@ -7,11 +7,11 @@ export const authorization = async (req, res) => {
     let apiVersion = "2.0";
     // console.log(apiInstance);
     let opts = {
-      code: "",
+      code: "tXK65M",
       clientId: "902fc7d9-9b05-4260-928f-bf0e06119af3",
       clientSecret: "rnodw7teby",
       redirectUri: "http://localhost:8000/",
-      grantType: "authorization_code",
+      grantType: "tXK65M",
     };
     apiInstance.token(apiVersion, opts, (error, data, response) => {
       console.log(

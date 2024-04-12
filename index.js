@@ -10,7 +10,7 @@ import {
 } from "./controller/authController.js";
 
 const app = express();
-const port = 8000;
+const port = 8001;
 
 app.get("/test", (req, res) => {
   res.status(200).send({ success: true, message: "message from server" });
