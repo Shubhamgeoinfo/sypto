@@ -14,10 +14,10 @@ export const authorization = async (req, res) => {
     // console.log(apiInstance);
     let opts = {
       code: "tXK65M",
-      clientId: "902fc7d9-9b05-4260-928f-bf0e06119af3",
-      clientSecret: "rnodw7teby",
+      clientId: "$ClientId",
+      clientSecret: "$ClientSecret",
       redirectUri: "http://localhost:8000/",
-      grantType: "tXK65M",
+      grantType: "",
     };
     apiInstance.token(apiVersion, opts, (error, data, response) => {
       console.log(
