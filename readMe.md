@@ -5,3 +5,4 @@ start with downloading the source code.
 npm i
 modify the API key file.
 npm run start
+Replace $ClientId and $ClientSecret with your values in code to work
