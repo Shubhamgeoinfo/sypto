@@ -36,7 +36,15 @@ export const RedirectedPath = () => {
   };
 
   const getHoldings = () => {
-    axios.get("http://localhost:8001");
+    axios.get("http://localhost:8001/api/v1/holding?token=" + accessToken).then((res) => {
+      console.log({ res });
+    }).catch((err) => {console.log({ err }) });
+  };
+
+  const getLivePrices = () => {
+    axios.get("http://localhost:8001/api/v1/price?token=" + accessToken).then((res) => {
+      console.log({ res });
+    }).catch((err) => {console.log({ err }) });
   };
 
   const tokenApi = "https://api.upstox.com/v2/login/authorization/token";
@@ -44,8 +52,6 @@ export const RedirectedPath = () => {
 
   useEffect(() => {
     const currentCode = searchParams.get("code");
-    console.log({ searchParams, currentCode });
-    setSearchParams({});
     getToken(currentCode);
   }, [searchParams]);
   return (
@@ -54,6 +60,7 @@ export const RedirectedPath = () => {
       <h3>Hi, {name}</h3>
       <div>
         <button onClick={getHoldings}>Get Holdings</button>
+        <button onClick={getLivePrices}>Get Live Price</button>
       </div>
     </>
   );
